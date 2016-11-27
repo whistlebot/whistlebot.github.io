@@ -1,0 +1,272 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+html,
+body {
+  overflow-x: hidden;
+}
+/* Bootstrap fixed-navbar fix */
+
+.anchor {
+  margin-top: -40px;
+  padding-top: 40px;
+}
+/*------- Base custom styles ------ */
+
+p,
+div {
+  color: #FFFFFF;
+  font-family: 'Open Sans';
+}
+
+a {
+  color: #004566;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #004566;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Ubuntu;
+  font-weight: 700;
+}
+
+h2 {
+  color: #004566;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+h2.style1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+h2.style2 {
+  color: #323233;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+strong {
+  color: #ffffff;
+  font-weight: bold;
+}
+/*------ Nav styles ------*/
+
+.navbar {
+  background: rgba(255, 255, 255, .92);
+  border-bottom: 0px;
+  box-shadow: 0px 1px 0px 1px rgba(62, 62, 62, 0.2);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #323233;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a:hover {
+  background: none;
+  color: #666666;
+}
+
+.navbar-default .navbar-brand {
+  font-family: Ubuntu;
+  font-weight: 700;
+  color: #323233;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #666666;
+}
+/*------ Button styles ------*/
+
+.btn-default.active,
+.btn-default.focus,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover,
+.open>.dropdown-toggle.btn-default {
+  background-color: #585E6B;
+  color: #EEE;
+}
+
+.btn-default {
+  background-color: #808899;
+  color: #EEE;
+  border-color: #6C727F;
+}
+
+.btn {
+  border-radius: 0px;
+  margin-bottom: 6px;
+}
+
+.btn:hover .fa {
+  color: #73A7F7;
+}
+/*------ Section styles ------*/
+
+.content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/*------ Home ------*/
+
+.jumbotron {
+  background: url(https://scontent.fphl1-1.fna.fbcdn.net/v/t1.0-9/15027939_374486079557705_8527347085874016966_n.jpg?oh=50cb056e059e1f3e6e88788f28693a5c&oe=58B90EB3) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding: 160px 0px;
+  margin-bottom: 0px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.jumbotron h1 {
+  color: #FFFFFF;
+}
+/*------ About ------*/
+
+.content-bio {
+  background: #323233;
+  font-size: 1.6em;
+}
+/*------ Portfolio ------*/
+
+.content-shows {
+  background-color: #F5F5F5;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#media {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.content-media .col-sm-6,
+.content-media .col-md-3 {
+  background: #323233
+  margin: 15px auto;
+}
+/*------ Thumbs -------*/
+
+.thumb {
+  margin: 0 auto;
+  max-width: 533px;
+  position: relative;
+}
+
+.hover-opaque {
+  background: #000;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+}
+
+.thumb .fa {
+  color: #FFF;
+  margin: -15px;
+  position: absolute;
+  opacity: 0;
+  top: 45%;
+  right: 50%;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+}
+
+.thumb:hover .hover-opaque {
+  opacity: 0.5;
+}
+
+.thumb:hover .fa {
+  opacity: 1;
+}
+
+.thumb-caption {
+  background: #FFF;
+  border-color: #E6E6E6;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  color: #4E4E54;
+  font-weight: 700;
+  padding: 10px;
+}
+
+figcaption a {
+  color: #4E4E54;
+  font-size: 0.9em;
+}
+
+figcaption a:hover {
+  color: #73A7F7;
+  text-decoration: none;
+}
+/*------ Contact ------*/
+
+.content-contact {
+  background: #E5E5E5;
+  padding-bottom: 34px;
+}
+
+#head-shot {
+  background: #FFF;
+  border: 1px solid #ccc;
+  height: 200px;
+  margin-bottom: 30px;
+  padding: 3px;
+  width: 200px;
+}
+/*------ Footer ------*/
+
+footer {
+  background: #323233;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  color: #fffff;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 20px 10px 0px;
+}
+
+footer ul {
+  padding-left: 0px;
+}
+
+footer li a,
+footer li a:active,
+footer li a:hover {
+  color: #fffff;
+}
+
+footer p {
+  margin: 20px 0 0 0;
+}
+
+footer p,
+footer a,
+footer a:hover {
+  color: #AAA;
+}
